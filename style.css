@@ -1,0 +1,118 @@
+* {
+    font-family: sans-serif, Arial;
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 9vh;
+    background: white;
+    border: 1px solid black;
+    padding: 0.7rem;
+}
+header h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+header p {
+    font-size: 20px;
+}
+#text{
+    font-size: 17px;
+    text-align: center;
+    margin: 2rem;
+}
+.corps h3{
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin: auto;
+    margin-bottom: 4rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 6px;
+    background: white;
+    gap: 2rem;
+}
+input,select {
+    width: 100%;
+    height: 1.5rem;
+    padding: 4px;
+    border-radius: 0 4px;
+    border: 1px solid;
+}
+select{
+    text-align: center;
+}
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0.5rem rgb(9, 97, 220);
+}
+select:focus {
+    outline: none;
+}
+button {
+    transform: scale(1);
+    border-radius: 2px;
+    border: 1px solid;
+    background: rgb(9, 97, 220);
+    width: 50%;
+    height: 1.5rem;
+    margin: auto;
+}
+button:active{
+    transform: scale(1.10);
+}
+
+.contenu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+.carte{
+    display: flex;
+    flex-direction: column;
+    transform: scale(1);
+    background: white;
+    box-shadow: 0 0 5px rgb(36, 35, 35);
+    padding: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.carte h3{
+    text-align: center;
+    margin: 5px;
+}
+.carte p {
+    text-align: center;
+    margin: 5px;
+}
+.carte:hover{
+     transform: scale(1.05);
+     background: white;
+     box-shadow: 0 0 5px black;
+}
+.supp {
+    width: 9rem;
+    border-radius: 4px;
+    background: rgb(218, 13, 13);
+    text-align: center;
+
+}
+.resultat{
+    text-align: center;
+    margin: 2rem;
+}
+.resultat p {
+    text-align: center;
+    margin: 2rem;
+}

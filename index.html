@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur Budget-Depenses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div >
+    <header>
+        <h1>Calculateur Budget-Depenses</h1>
+        <p>🏦</p>
+    </header>
+<div class="corps">
+
+    <p id="text">Gardez un oeil sur vos finances</p>
+
+    <form action="" class="formulaire">
+
+        <h3><em>Nouvelle Transaction</em></h3>
+        
+        <input type="text" id="libelle" name="libelle" placeholder="Libellé" required>
+
+        <input type="number" id="montant" name="montant" placeholder="Montant" required>
+
+        <select name="type" id="type">
+            <option value="Revenu">Revenu</option>
+            <option value="Depense">Depense</option>
+        </select>
+
+        <select name="categorie" id="categorie">
+            <option value="Logement">Logement</option>
+            <option value="Nourriture">Nourriture</option>
+            <option value="Transport">Transport</option>
+            <option value="Loisir">Loisir</option>
+            <option value="Autre">Autre</option>
+        </select>
+
+        <button type="submit" id="btn">Envoyer</button>
+    </form>
+    
+    <div class="contenu">
+
+    </div>
+
+
+    <div class="resultat">
+
+    </div>
+</div>
+
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
